@@ -14,7 +14,7 @@ h1 {
     font-size: 4rem;
     color: #000;
     font-weight: 700;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 a {
@@ -24,6 +24,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+}
 /* nav */
 nav {
     position: fixed;
@@ -107,59 +112,3 @@ nav img {
     background-color: #555;
 }
 
-
-.logo-icon img {
-    width: 200px;
-    border-radius: 50%;
-}
-
-/* fondo ondas */
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: -5%;
-    left: 50vw;
-    transform: translateX(-50%) scale(1.7, 0.8);
-    height: 828px;
-    width: 2436px;
-    background: url('../images/hero.png') no-repeat center;
-    z-index: -1;
-    opacity: 0.8;
-}
-
-@media (max-width: 1800px) {
-    .hero-section::before {
-        top: -4%;
-        transform: translateX(-49%) scale(1.1, 0.6);
-    }
-}
-
-@media (max-width: 1500px) {
-    h1 {
-        font-size: 3rem;
-    }
-    .hero-section h1 {
-        padding: 20vh 0 10vh;
-        max-width: 50vw;
-        text-align: center;
-    }
-    .logo-icon img {
-        width: 150px;
-    }
-    .hero-buttons a {
-        padding: 10px 70px;
-    }
-    .hero-section::before {
-        top: -14%;
-        transform: translateX(-50%) scale(1.1, 0.5);
-    }
-}
-
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .hero-section::before {
-        transform: translateX(-50%) scale(1, 0.5);
-    }
-}
