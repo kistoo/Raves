@@ -112,3 +112,142 @@ nav img {
     background-color: #555;
 }
 
+
+.logo-icon img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* fondo ondas */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 50vw;
+    transform: translateX(-50%) scale(1.7, 0.8);
+    height: 828px;
+    width: 2436px;
+    background: url('../images/hero.png') no-repeat center;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+@media (max-width: 1800px) {
+    .hero-section::before {
+        top: -4%;
+        transform: translateX(-49%) scale(1.1, 0.6);
+    }
+}
+
+@media (max-width: 1500px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .hero-section h1 {
+        padding: 20vh 0 10vh;
+        max-width: 50vw;
+        text-align: center;
+    }
+    .logo-icon img {
+        width: 150px;
+    }
+    .hero-buttons a {
+        padding: 10px 70px;
+    }
+    .hero-section::before {
+        top: -14%;
+        transform: translateX(-50%) scale(1.1, 0.5);
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .hero-section::before {
+        transform: translateX(-50%) scale(1, 0.5);
+    }
+}
+
+/*download section*/
+
+.download-section {
+    margin-top:5vh;
+    height:95vh;
+    width: 80vw;
+    display: flex;
+    gap: 10vw;
+    margin-left: 10vw;
+    align-items: center;
+}
+
+.download-der {
+    text-align: center;
+    width: 60%;
+}
+
+.download-section h1 {
+    padding: 0 0 10vh;  
+    text-align: center;
+}
+
+
+.download-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-buttons a {
+    margin-top: 4vh;
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
+    background-color: #AD45EC;
+    padding: 5px 10px 5px 20px;
+    width: 335px;
+    border-radius: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    align-items: center;
+}
+
+.download-buttons a:first-of-type{
+    background-color: #4997D0;
+}
+
+/* fondo ondas */
+.download-section::before {
+    content: "";
+    position: absolute;
+    top: 93%;
+    left: -2vw;
+    transform: scale(0.8, 0.6);
+    height: 828px;
+    width: 2436px;
+    background: url('../images/hero.png') no-repeat center;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+@media (max-width: 1800px) {
+    .download-section::before {
+        top: 93%;
+        left: -5vw;
+        transform: scale(0.7, 0.5);
+    }
+}
+
+@media (max-width: 1500px) {
+    .download-section::before {
+        top: 70%;
+        left: -14vw;
+        transform: scale(0.5, 0.4);
+    }
+    a, p {
+        font-size: 1.2rem;
+    }
+    .download-buttons a {
+        padding: 5px 10px 5px 15px;
+        width: 235px;
+    }
+}
