@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raves</title>
     <link rel="stylesheet" href="../css/landing-page.css">
+    <link rel="stylesheet" href="../css/layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Raleway:wght@300&family=Rubik:ital@1&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
@@ -16,23 +16,23 @@
     <nav>
         <div class="nav-izq">
             <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
         <div class="logo">
-            <img src="../images/logotipo.png" alt="">
+            <a href="#hero"><img src="../images/logotipo.png" alt=""></a>
         </div>
 
         <div class="auth-buttons">
-            <a href="#">Sign In</a>
-            <a href="#">Register</a>
+            <a href="sign-in.html">Sign In</a>
+            <a href="register.html">Register</a>
         </div>
     </nav>
 
     <!-- Sección principal -->
-    <section class="hero-section">
+    <section id="hero" class="hero-section">
         <h1>Experiencia la música e interactúa con el mundo</h1>
         <p>Descubre y escucha música mientras conoces a personas de alrededor del mundo.</p>
         <div class="hero-buttons">
@@ -57,8 +57,167 @@
                 <a href="#"><img src="../images/download-icon.png" alt=""> Descarga para Android</a>
             </div>
         </div>
-       
+
     </section>
 
+    <!-- Sección Carrusel -->
+<section class="carousel-section">
+    <h2>Lo mejor solo para ti...</h2>
+    <div class="carousel">
+        <button class="carousel-control left">
+            <img src="../images/control-izquierda.png" alt="Anterior">
+        </button>
+
+        <!-- Contenedor del carrusel -->
+        <div class="carousel-inner">
+            <!-- Item 1 del carrusel -->
+            <div class="carousel-item carousel-item-1">
+                <!-- Columna Izquierda -->
+                <div class="carousel-column carousel-left">
+                    <h3>Reproducir música</h3>
+                    <p>Disfruta de tus canciones favoritas en cualquier momento y lugar con nuestras listas de reproducción.</p>
+                    <img src="../images/feature-1.png" alt="Reproducir música" class="carousel-image">
+                </div>
+                <div class="separator"></div>
+                <!-- Columna Derecha -->
+                <div class="carousel-column carousel-right">
+                    <h3>Recomendaciones Personalizadas</h3>
+                    <p>Descubre nueva música con recomendaciones especialmente diseñadas para ti, basadas en tus gustos, escuchas recientes y tendencias del momento.</p>
+                    <img src="../images/feature-2.png" alt="Recomendaciones personalizadas" class="carousel-image">
+                </div>
+            </div>
+
+            <!-- Item 2 del carrusel -->
+            <div class="carousel-item carousel-item-2">
+                <!-- Columna Izquierda -->
+                <div class="carousel-column carousel-left">
+                    <h3>Mapas Musicales</h3>
+                    <p>Explora qué música está sonando en distintas partes del mundo. Descubre escenas locales, artistas emergentes y las tendencias musicales globales, todo en tiempo real.</p>
+                    <img src="../images/feature-3.png" alt="Mapas Musicales" class="carousel-image">
+                </div>
+                <div class="separator"></div>
+                <!-- Columna Derecha -->
+                <div class="carousel-column carousel-right">
+                    <h3>Ondas Musicales</h3>
+                    <p>Únete o crea sesiones en vivo donde puedes escuchar música junto a amigos o desconocidos en tiempo real, compartir reacciones y comentarios.</p>
+                    <img src="../images/feature-4.png" alt="Ondas Musicales" class="carousel-image">
+                </div>
+            </div>
+
+            <!-- Item 3 del carrusel -->
+            <div class="carousel-item carousel-item-3">
+                <!-- Columna Izquierda -->
+                <div class="carousel-column carousel-left">
+                    <h3>Comunidades</h3>
+                    <p>Participa en comunidades de personas con intereses musicales similares, conecta, comparte playlists, realiza y reacciona a publicaciones.</p>
+                    <img src="../images/feature-5.png" alt="Comunidades" class="carousel-image">
+                </div>
+                <div class="separator"></div>
+                <!-- Columna Derecha -->
+                <div class="carousel-column carousel-right">
+                    <h3>Wavers</h3>
+                    <p>Sigue a otros usuarios llamados "Wavers", interactúa con ellos y comparte experiencias musicales en una plataforma donde la música une a las personas de forma única.</p>
+                    <img src="../images/feature-6.png" alt="Wavers" class="carousel-image">
+                </div>
+            </div>
+
+            <!-- Item 4 del carrusel -->
+            <div class="carousel-item carousel-item-4">
+                <!-- Columna Izquierda -->
+                <div class="carousel-column carousel-left">
+                    <h3>Perfiles Sonoros</h3>
+                    <p>Personaliza tu "Perfil Sonoro" que refleja tu identidad musical a través de géneros, playlists y un paisaje sonoro visual, conectando con personas que comparten tus gustos.</p>
+                    <img src="../images/feature-7.png" alt="Perfiles Sonoros" class="carousel-image">
+                </div>
+                <div class="separator"></div>
+                <!-- Columna Derecha -->
+                <div class="carousel-column carousel-right">
+                    <h3>Estadísticas e Historial</h3>
+                    <p>Accede a estadísticas detalladas sobre tu actividad musical, tus canciones más escuchadas, y revisa el historial de tus descubrimientos musicales, todo en un solo lugar.</p>
+                    <img src="../images/feature-8.png" alt="Estadísticas e Historial" class="carousel-image">
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control right">
+            <img src="../images/control-derecha.png" alt="Siguiente">
+        </button>
+    </div>
+</section>
+
+
+<!--Seccion about us-->
+    <section id="about" class="about-us-section">
+        <div class="about-us-info">
+            <h2>ABOUT US</h2>
+            <p>Echo es una startup nacida en la Universidad Peruana de Ciencias Aplicadas con el objetivo de revolucionar la interacción musical de los peruanos en entornos digitales. Para alcanzar este objetivo, se ha creado el proyecto Waves, una plataforma diseñada para aquellos que disfrutan de la música, desean compartir sus pasiones y descubrir nuevas melodías en compañía de una comunidad global. Waves no es solo una aplicación; es un espacio donde las personas pueden conectarse a través de su amor por la música, creando vínculos duraderos y explorando un universo musical sin fronteras.</p>
+            <br>
+            <p>Para Echo, la música tiene el poder de unir a las personas de manera única. Por ello, esta startup busca desarrollar una plataforma que haga de cada experiencia musical algo más enriquecedor, donde cada usuario pueda encontrar a otros con gustos similares, escuchar música con otros usuarios y compartir su viaje musical con el mundo.</p>
+            <div>
+                <img src="../images/echo.png" alt="">
+                <img class="about-us-icono" src="../images/icono.png" alt="">
+            </div>
+        </div>
+        <img src="../images/team.png" alt="">
+    </section>
+
+<!--Seccion contact us-->
+<section id="contact" class="contact-us-section">
+    <h2>CONTACT US</h2>
+    <div class="contact-us-social">
+        <div class="contact-us-column left">
+            <h3>ECHO</h3>
+            <div class="social-row">
+                <img src="../images/twitter.png" alt="">
+                <img src="../images/instagram.png" alt="">
+                <img src="../images/linkedin.png" alt="">
+            </div>
+            <div class="social-row">
+                <img src="../images/email.png" alt="">
+                <img src="../images/facebook.png" alt="">
+            </div>
+            <div class="contact echo">
+                <img src="../images/echo.png" alt="">
+            </div>
+        </div>
+        <div class="contact-us-separator"></div>
+        <div class="contact-us-column right">
+            <h3>RAVES</h3>
+            <div class="social-row">
+                <img src="../images/twitter.png" alt="">
+                <img src="../images/instagram.png" alt="">
+                <img src="../images/tiktok.png" alt="">
+            </div>
+            <div class="social-row">
+                <img src="../images/email.png" alt="">
+                <img src="../images/facebook.png" alt="">
+            </div>
+            <div class="contact raves">
+                <img src="../images/icono.png" alt="">
+                <img src="../images/logotipo.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-links">
+            <div class="footer-column">
+                <a href="../../docs/complaints-book.pdf">Complaints Book</a>
+                <a href="../../docs/terms-and-conditions.pdf">Terms and Conditions</a>
+            </div>
+            <div class="footer-column">
+                <a href="../../docs/privacy-policy.pdf">Privacy Policy</a>
+                <a href="../../docs/cookies-policy.pdf">Cookies Policy</a>
+            </div>
+            <div class="footer-column">
+                <a href="../../docs/help.pdf">Help</a>
+                <a href="../../docs/frequent-questions.pdf">Frequent Questions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

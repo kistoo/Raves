@@ -1,0 +1,158 @@
+* {
+    overflow: hidden;
+}
+
+nav {
+    border-bottom: 2px solid #ffffff;
+}
+/* Sección de inicio de sesión */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff; /* Línea inferior blanca */
+}
+
+.login-container {
+    overflow: visible;
+    margin-top: 2vh;
+    display: flex;
+    align-items: start;
+    gap: 50px; 
+    padding: 40px;
+    height: 60%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 70px 150px 100px 50px;
+}
+
+.logo-container .logo {
+    width: 300px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 90%;
+    width: 45vw;
+}
+
+.login-box h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.login-box p>a{
+    color: #E466A2;
+    transition: 0.3s ease;
+}
+
+.login-box p>a:hover{
+    color: #FFBF00;
+
+}
+
+.login-main {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+form {
+    overflow: visible;
+}
+
+form input[type="text"] {
+    width: 297px;
+    height: 29px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    font-weight: 300;
+    color: #000000;
+    background-color: #C4EFE2;
+}
+
+.login-form button {
+    width: 60%;
+    margin-top: 5vh;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #4997D0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #FFBF00;
+}
+
+.social-login a {
+    color: #FFBF00;
+    transition: 0.3s ease;
+}
+
+.social-login a:hover{
+    color: #AD45EC;
+}
+
+.separator {
+    height: 150px;
+    width: 1px;
+    background-color: #000000;
+    align-self: flex-start;
+    margin: 0 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap:70px;
+    margin: 50px 30px 100px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.register {
+    margin: 20px 0 10px;
+    font-size: 1rem;
+}
+
+.register a {
+    color: #FFAF2B; /* Color del enlace de registro */
+    text-decoration: none;
+}

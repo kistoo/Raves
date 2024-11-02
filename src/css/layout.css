@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Alexandria", sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* fonts */
+
+h1 {
+    font-size: 4rem;
+    color: #000;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
+}
+
+a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    width: 92vw;
+    z-index: 100;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4vw ;
+    height: 4vh;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+}
+
+nav img {
+    width: 200px;
+    margin-right: 3vw;
+}
+
+.auth-buttons {
+    display:flex;
+    gap: 3vw;
+}
+
+.auth-buttons a {
+    padding: 8px 40px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    background-color: #5F9786;
+    transition: 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #FFBF00;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: color 0.3s;
+    padding: 20px;
+}
+
+.footer-links a:hover {
+    color: #88D8C0;
+}
