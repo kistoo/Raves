@@ -1,4 +1,4 @@
-/* hero section */
+/* Hero section */
 .hero-section {
     text-align: center;
     width: 100vw;
@@ -52,7 +52,7 @@
     border-radius: 50%;
 }
 
-/* fondo ondas */
+/* Waves */
 .hero-section::before {
     content: "";
     position: absolute;
@@ -103,8 +103,7 @@
     }
 }
 
-/*download section*/
-
+/*Download section*/
 .download-section {
     margin-top:5vh;
     height:95vh;
@@ -115,7 +114,7 @@
     align-items: center;
 }
 
-.download-der {
+.download-right {
     text-align: center;
     width: 60%;
 }
@@ -149,7 +148,7 @@
     background-color: #4997D0;
 }
 
-/* fondo ondas */
+/* Waves */
 .download-section::before {
     content: "";
     position: absolute;
@@ -186,7 +185,7 @@
     }
 }
 
-/* Sección del carrusel */
+/* Carousel section */
 .carousel-section {
     text-align: center;
 }
@@ -314,7 +313,7 @@
     left: 350%;
 }
 
-/*Sección about us*/
+/* About us section*/
 .about-us-section {
     display: flex;
     padding: 20vh 5vw;
@@ -352,7 +351,7 @@
     margin: 0 2vw;
 }
 
-/* Sección Contact Us */
+/* Contact us section */
 .contact-us-section {
     margin:5vh 0;
     text-align: center;
